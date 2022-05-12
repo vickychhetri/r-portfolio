@@ -1,0 +1,7 @@
+.TopBarCustomcss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #f40a3d, #bc0538, #86092e, #520a20, #25030c);
+    color: wheat; 
+}

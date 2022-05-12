@@ -1,0 +1,10 @@
+.imgsize{
+    max-width: 100%;
+    max-height: 600px;
+}
+
+.CarosolContainer{
+height: fit-content;
+margin: 0%;
+padding: 0%;
+}
