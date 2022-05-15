@@ -1,6 +1,5 @@
 import React from 'react';
 import slider1 from '../images/homebg.webp';
-import slider2 from '../images/he2.jpg';
 import { Carousel,Container,Col, Row} from 'react-bootstrap';
 import './TopBar.css';
 

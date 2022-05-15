@@ -1,0 +1,10 @@
+.portfoliobox{
+/* max-width: 100%;
+max-height: 100%; */
+
+}
+
+.textcsssmooth{
+    text-shadow: 0 1px 0 rgb(194, 7, 7);
+    background-image: linear-gradient(to right, #f40a3d, #bc0538, #86092e, #520a20, #25030c);
+}
