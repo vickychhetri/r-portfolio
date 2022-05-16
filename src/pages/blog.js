@@ -12,13 +12,15 @@ const Blog = (props) =>{
            {blogData.map((data,key)=>{
              return (
               <Col lg={6}>
-              <div key={key}  className="shadow mb-5 mt-5"> 
-                    <h2 className="p-2 text-uppercase"> {data.title}</h2>
+              <div key={key}  className="shadow mb-5 mt-5 p-2"> 
+                  
                     <div>
-                    <img src={data.image} className="w-100 h-100 portfoliobox" />
+                    <img src={data.image} className="w-50 h-50" />
                     </div>
+                    <h2 className="p-2 text-uppercase"> {data.title}</h2>
                     <p className="p-2">
-                        {data.description}
+                        {data.description.substring(0,100)}... 
+                        <a href={`blog/${+data.id}`}> Read More </a>
                     </p>
               </div>
                 </Col>

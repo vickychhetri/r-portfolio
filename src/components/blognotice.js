@@ -1,8 +1,11 @@
 import React from 'react';
 import award from '../images/award.webp';
 import laptop from '../images/laptop.webp';
+
 import { Container,Col, Row,Card,Form } from "react-bootstrap";
+import { BsRssFill } from 'react-icons/bs';
 import './Blognotice.css';
+
 const Blognotice= (props)=> {
     return (
         <div >
@@ -30,15 +33,21 @@ const Blognotice= (props)=> {
               </h2>
               <ul className="text-left text-md-start"  style={{listStyleType:'none'}}>
                 <li className="listbloglatest shadow"> 
-                <a href="" className="text-decoration-none text-black"> 
-                Both Entity Framework Core and Entity Framework 6 are installed? May 13, 2022
+                
+
+                <a href="" className="text-decoration-none text-black">
+                <BsRssFill />  Both Entity Framework Core and Entity Framework 6 are installed? May 13, 2022
                 </a>
 
                 </li>
-                <li className="listbloglatest shadow">   <a href="" className="text-decoration-none text-black">  Flipping bits May 13, 2022 </a></li>
-                <li className="listbloglatest shadow">   <a href="" className="text-decoration-none text-black">  Flipping bits May 13, 2022 </a></li>
-                <li className="listbloglatest shadow">   <a href="" className="text-decoration-none text-black">  JavaScript Array forEach() May 12, 2022 </a></li>
-                <li className="listbloglatest shadow">   <a href="" className="text-decoration-none text-black"> Grading Students May 12, 2022 </a></li>
+                <li className="listbloglatest shadow">
+                       <a href="" className="text-decoration-none text-black"> <BsRssFill />   Flipping bits May 13, 2022 </a></li>
+                <li className="listbloglatest shadow">   
+                <a href="" className="text-decoration-none text-black"> <BsRssFill />   Flipping bits May 13, 2022 </a></li>
+                <li className="listbloglatest shadow">   
+                <a href="" className="text-decoration-none text-black"> <BsRssFill />    JavaScript Array forEach() May 12, 2022 </a></li>
+                <li className="listbloglatest shadow"> 
+                  <a href="" className="text-decoration-none text-black"> <BsRssFill />   Grading Students May 12, 2022 </a></li>
               </ul>
               <a href="" className="btn btn-danger btn-lg shadow-lg mt-3 mb-3"> Load More</a>
               </Col>
@@ -128,7 +137,7 @@ Code touches every single person in the organization and makes a difference to e
             </Col>
             
             <Col lg={true}>
-            <Card className="m-4">
+            <Card className="m-4 shadow">
                         <Card.Body>
                             <Card.Title>Web Development</Card.Title>
                             <Card.Subtitle className="mb-2">Laravel, React JS , C#, Java, PHP , Python  </Card.Subtitle>

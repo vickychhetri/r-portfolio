@@ -10,6 +10,9 @@ import {
   Route
 } from "react-router-dom";
 import Portfolio from './pages/portfolio';
+import SinglePage from './pages/singlepage';
+import Contact from './pages/contact';
+import Register from './pages/register';
 
 
 
@@ -21,7 +24,10 @@ function App() {
        <Route exact path="/" element={<Home/>}/>
        <Route exact path="/about" element={<About/>}/>
        <Route exact path="/blog" element={<Blog/>}/>
+       <Route exact path="/blog/:userId" element={<SinglePage/>}/>
        <Route exact path="/portfolio" element={<Portfolio/>}/>
+       <Route exact path="/contact" element={<Contact/>}/>
+       <Route exact path="/register" element={<Register/>}/>
         </Routes>
        
        </Router>

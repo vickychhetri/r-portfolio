@@ -13,8 +13,8 @@ const Menu= (props)=> {
                    
                     <Container>
                    
-                    <Navbar.Brand href="#home">
-                      <a href="/">   <img src={logo} alt="Company Brand"/></a>
+                    <Navbar.Brand href="/">
+                     <img src={logo} alt="Company Brand"/>   
                     </Navbar.Brand>
                    
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
@@ -31,11 +31,11 @@ const Menu= (props)=> {
                                     <NavDropdown.Item href="#action/3.4">Tech Support</NavDropdown.Item>
                                 </NavDropdown> */}
                                 <Nav.Link href="/blog">Blog</Nav.Link>
-                                <Nav.Link href="#pricing">Contact</Nav.Link>
-                                <Nav.Link href="#pricing">Login</Nav.Link>
+                                <Nav.Link href="/contact">Contact</Nav.Link>
+                                <Nav.Link href="/login">Login</Nav.Link>
                                 </Nav>
                                 <Nav>
-                                <Nav.Link href="#deets" className="btn btn-danger text-white"> Talk Now</Nav.Link>
+                                <Nav.Link href="/register" className="btn btn-danger text-white"> Talk Now</Nav.Link>
                                 
                                 </Nav>
                             </Navbar.Collapse>

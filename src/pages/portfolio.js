@@ -13,9 +13,9 @@ const Portfolio = (props) =>{
                   return(
                   <Col lg={6}>
                   <div key={key} style={style} className="shadow mb-5 mt-5"> 
-                        <h2 className="p-2 text-uppercase textcsssmooth text-white"> {data.title}</h2>
+                        <h2 className="p-2 text-uppercase "> {data.title}</h2>
                         <div>
-                        <img src={data.image} className="w-100 h-100 portfoliobox" />
+                        <img src={data.image} className="w-100 h-100 portfoliobox"  alt={data.title}/>
                         </div>
                         <p className="p-2">
                             {data.description}
