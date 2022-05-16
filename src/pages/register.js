@@ -7,7 +7,11 @@ const Register = (props) => {
     const [email, setEmail]=useState('');
     const [password, setPassword]=useState('');
     const [cpassword, setCpassword]=useState('');
+    
     const [submitted, setSubmitted] = useState(false);
+    const [message, setMessage]=useState('');
+    const [matchp, setMatchp]=useState(false);
+
     const handleNameChange= (event) =>{
         event.persist();
         setName(event.target.value);
@@ -19,26 +23,36 @@ const Register = (props) => {
     const handlePasswordChange= (event) =>{
         event.persist();
         setPassword(event.target.value);
+        console.log(cpassword+'p1');
+       
     }
     const handleCPasswordChange= (event) =>{
         event.persist();
         setCpassword(event.target.value);
-    }
+        console.log(cpassword+'p2');
+ 
+        }
+
+ 
+
+
 
     const submitRegistration = (event) => {
         event.preventDefault();
         setSubmitted(true);
     console.log("form submitted");
+
+
+
         }
     return (
     <div>
       <Layout>
         <Container>
           <Row>
-            <Col></Col>
-            <Col lg={6}>
+            <Col lg={true}></Col>
+            <Col lg={true}>
               <div className="shadow w-100 p-4">
-                  {name}
                 <Form onSubmit={submitRegistration}>
                   <Form.Group controlId="form-group-id-name" className="mt-2">
                     <Form.Label className="d-flex justify-content-start">
@@ -46,7 +60,7 @@ const Register = (props) => {
                     </Form.Label>
                     <Form.Control type="text" placeholder="Enter your Name"
                      name="fullName" value={name} onChange={handleNameChange} />
-                     {submitted && !name && <span id='last-name-error' class="text-danger">Please Enter Your Full Name</span>}
+                     {submitted && !name && <span id='last-name-error' class="text-danger">Please enter your full name</span>}
                   </Form.Group>
 
                   <Form.Group controlId="form-group-id-email" className="mt-2">
@@ -55,6 +69,7 @@ const Register = (props) => {
                     </Form.Label>
                     <Form.Control type="email" 
                     placeholder="Enter your email"  name="email" value={email} onChange={handleEmailChange}/>
+                    {submitted && !email && <span id='last-name-error' class="text-danger">Please enter your email address</span>}
                   </Form.Group>
 
                   <Form.Group controlId="form-group-id-password" className="mt-2">
@@ -62,7 +77,7 @@ const Register = (props) => {
                       Password
                     </Form.Label>
                     <Form.Control type="password" placeholder="********" value={password} onChange={handlePasswordChange}/>
-                
+                    {submitted && !password && <span id='last-name-error' class="text-danger">Please enter password</span>}
                   </Form.Group>
 
                   <Form.Group controlId="form-group-id-cpassword" className="mt-2">
@@ -71,6 +86,9 @@ const Register = (props) => {
                     </Form.Label>
                     <Form.Control type="password" placeholder="********" value={cpassword} 
                     onChange={handleCPasswordChange}/>
+                     {submitted && !cpassword && <span id='last-name-error' class="text-danger">Please enter confirm password</span>}
+                     <span> 
+                       {password!=''?((password && password!==cpassword)?'password not match ':' password Match'): ''}</span>
                   </Form.Group>
 
                   <Button
@@ -83,7 +101,7 @@ const Register = (props) => {
                 </Form>
               </div>
             </Col>
-            <Col></Col>
+            <Col lg={true}></Col>
           </Row>
         </Container>
       </Layout>
