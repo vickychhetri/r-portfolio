@@ -35,7 +35,7 @@ const Menu= (props)=> {
                                 <Nav.Link href="/login">Login</Nav.Link>
                                 </Nav>
                                 <Nav>
-                                <Nav.Link href="/register" className="btn btn-danger text-white"> Talk Now</Nav.Link>
+                                <Nav.Link href="/register" className="btn btn-danger text-white"> Register</Nav.Link>
                                 
                                 </Nav>
                             </Navbar.Collapse>
